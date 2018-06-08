@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
-#code:myhaspl@qq.com
-#9-14.py
-
+ 
 import numpy as np
 
 import mlpy
@@ -12,7 +10,7 @@ import cv2
 print 'loading  ...'
 
 def getnumc(fn):
-    '''返回数字特征'''
+    '''return characters of image of number'''
     fnimg = cv2.imread(fn)
     img=cv2.resize(fnimg,(8,8))
     alltz=[]
@@ -37,7 +35,7 @@ def getnumc(fn):
     return alltz
     
 
-#读取样本数字
+#read number sample
 x=[]
 y=[]
 for numi in xrange(1,10):
@@ -51,9 +49,9 @@ x=np.array(x)
 y=np.array(y)
 svm = mlpy.LibSvm(svm_type='c_svc', kernel_type='poly',gamma=10)
 svm.learn(x, y)
-print u"训练样本测试"
+print u"training sample test"
 print svm.pred(x)
-print u"未知图像测试"
+print u"unknown image test"
 for iii in xrange (1,10):
     testfn= 'nums/test/'+str(iii)+'-test.png'
     testx=[]
