@@ -30,5 +30,12 @@ The problem of maximizing the margin  is equivalent to the problem of minimizing
 
 This is a problem of Lagrangian optimization that can be solved using Lagrange multipliers to obtain the weight vector  and the bias of the optimal hyperplane.
 
+A distance from the corresponding training sample to their correct decision region could be added to the minimizing the function:
+
+![image](https://github.com/wangjinlong9788/NumberRecognitionSVM/blob/master/svm_basics3.png)
+
+The new optimization problem is
+
+![image](https://github.com/wangjinlong9788/NumberRecognitionSVM/blob/master/newoptimization%20.PNG)
 # OpenCV
 Need to install  module mlpy and cv2
