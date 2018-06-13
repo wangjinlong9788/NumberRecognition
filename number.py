@@ -59,4 +59,4 @@ for iii in xrange (1,10):
     print     
     print testfn+":",
     print svm.pred(testx)
-
+#source:The Practice of Machine Learning
