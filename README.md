@@ -15,5 +15,20 @@ The operation of the SVM algorithm is based on finding the hyperplane that gives
 The optimal separating hyperplane maximizes the margin of the training data.
 
 ![image](https://github.com/wangjinlong9788/NumberRecognitionSVM/blob/master/optimal-hyperplane.png)
+
+The representations of the hyperplane could be
+
+![image](https://github.com/wangjinlong9788/NumberRecognitionSVM/blob/master/hyperplane.PNG)
+
+where x symbolizes the training examples closest to the hyperplane.
+
+In general, the training examples that are closest to the hyperplane are called support vectors. This representation is known as the canonical hyperplane.
+
+The problem of maximizing the margin  is equivalent to the problem of minimizing the function:
+
+![image](https://github.com/wangjinlong9788/NumberRecognitionSVM/blob/master/functionmin.PNG)
+
+This is a problem of Lagrangian optimization that can be solved using Lagrange multipliers to obtain the weight vector  and the bias of the optimal hyperplane.
+
 # OpenCV
 Need to install  module mlpy and cv2
