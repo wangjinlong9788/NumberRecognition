@@ -16,4 +16,4 @@ The optimal separating hyperplane maximizes the margin of the training data.
 
 ![image](https://github.com/wangjinlong9788/NumberRecognitionSVM/blob/master/optimal-hyperplane.png)
 # OpenCV
-Need to install  model mlpy and cv2
+Need to install  module mlpy and cv2
